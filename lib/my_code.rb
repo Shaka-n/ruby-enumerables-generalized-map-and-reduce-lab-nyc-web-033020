@@ -19,7 +19,10 @@ def reduce(source_array, starting_point = 0)
       end
     else if source_array[index] == true || source_array[index] == false 
     result = false
-    
+    while index < source_array.length do 
+      result = yield(source_array[index])
+      index += 1
+      end
   end
   result
 end
