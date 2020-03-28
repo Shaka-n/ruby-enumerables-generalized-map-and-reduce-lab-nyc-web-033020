@@ -17,7 +17,7 @@ def reduce(source_array, starting_point = 0)
       result = yield(source_array[index])
       index += 1
       end
-  else if source_array[index].class == true || source_array[index].class == false 
+  else source_array[index].class == true || source_array[index].class == false 
     result = false
     while index < source_array.length do
       result = yield(source_array[index])
